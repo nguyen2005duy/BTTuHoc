@@ -4,7 +4,7 @@ void print(int x)
 {
     cout<<&x<<endl<<x<<endl;
 }
-void printthamtri(int &x)
+void printthamchieu(int &x)
 {
     cout<<&x<<endl<<x;
 }
@@ -13,6 +13,6 @@ int main ()
     int x= 0;
     cout<<&x<<endl<<x<<endl;
     print(x);
-    printthamtri(x);
+    printthamchieu(x);
     
-}// X có cùng giá trị nhưng khác địa chỉ bộ nhớ, nhưng khi truyền tham biến, x có cùng giá trị và cùng dchij bộ nhớ
+}// X có cùng giá trị nhưng khác địa chỉ bộ nhớ, nhưng khi truyền tham chiếu, x có cùng giá trị và cùng đchỉ bộ nhớ
