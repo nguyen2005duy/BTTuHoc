@@ -2,7 +2,7 @@
 #include<cmath>
 using namespace std;
 struct point{
-    double a,b;
+    int a,b;
 };
 struct rect{
     point left;
@@ -20,22 +20,7 @@ struct rect{
         return result;
     }
 };
-double khoangCach(point a, point b){
-    double result;
-    result = sqrt(pow(a.a + b.a, 2) + pow(a.b + b.b, 2));
-    return result;
-}
 
-// void print(point a){
-//     std::cout<< a.x << " " <<a.y;
-// }
-// point mid_point(const point a,const point b){
-//     point result;
-//     result.x = (a.x + b.x)*1.0/2;
-//     result.y = (a.y + b.y)*1.0/2;
-
-//     return result;
-// }
 int main()
 {
     point a;
@@ -48,7 +33,7 @@ int main()
     b.left = c;
     b.w = 10;
     b.h = 5;
-    if(b.contains(c)){
+    if(b.contains(a)){
         cout<< "YES";
     }else cout<< "NO";
     return 0;
